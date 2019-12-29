@@ -1,0 +1,45 @@
+
+//feature: HEADER
+
+.header {
+
+    // grid-row: 1 /  2; 
+    // grid-column: full-start / full-end;
+    // background-color: $color-signup; 
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 5rem; 
+    
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column; 
+    }
+
+    &__list {
+        list-style: none;
+        display: flex; 
+        justify-content: flex-end; 
+
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 1.7rem;  
+        padding: 2rem; 
+        text-decoration: none;
+        color: rgba(#fff, .7); 
+        display: inline-block;  
+
+        &:hover,
+        &:active {
+            background-color: rgb(114, 113, 113);
+            color: #d9dbdd;  
+        }
+    }
+
+
+}
+
+

@@ -1,0 +1,64 @@
+// BREAKPOINTS FOR MEDIA QUERIES
+
+
+$bp-large: 62.5em;  // 1000px  ==> (1000px / 16px) 
+$bp-medium: 43.75em; //700px ==> (700px / 16px) 
+$bp-small: 31.25em; //500px ==> (500px / 16px) 
+
+
+*, 
+*::before,
+*::after { 
+    @include reset;  
+
+}
+
+html {
+    font-size: 62.5%; //1rem == 10px;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%; 
+    }
+}
+
+body {
+    font-size: $font-primary;
+    background-color: $color-signup;   
+    font-size: $font-primary; 
+    line-height: 1.5;  
+
+
+}
+
+br {
+    @media only screen and (max-width: $bp-large) {
+        display: none; 
+    }
+}
+
+
+
+
+
+// .container {
+//     display: grid;
+//     grid-template-rows: 80vh repeat(min-content ;  
+//     overflow-x: hidden;              
+// } 
+
+.wrapper {
+    background-color: $color-main; 
+}
+
+//feature:   UTILITY CLASSES
+
+.mb-sm {margin-bottom: 2rem}; 
+.mb-md {margin-bottom: 4rem}; 
+.mb-lg {margin-bottom: 4rem}; 
+.mb-hg {margin-bottom: 8rem};  
+
+
+::selection {
+    background-color: $call-to-action-1;         
+    color: $color-white; 
+}

@@ -1,0 +1,19 @@
+.intro {
+    // grid-row: 2 / 3;  
+    // grid-column: full-start/ full-end;     
+
+    
+    &__img {
+        width: 100%;
+        max-width: 72rem;     
+     }
+
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);  
+
+    &__img { 
+        margin: 4rem auto; 
+    }
+
+}
