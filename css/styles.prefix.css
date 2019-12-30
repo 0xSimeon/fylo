@@ -455,7 +455,20 @@ body {
     .footer__link:link:hover, .footer__link:link:active, .footer__link:visited:hover, .footer__link:visited:active {
       color: #339ecc; }
   .footer__social-link {
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
+    .footer__social-link-1::before {
+      content: "Facebook";
+      visibility: hidden;
+      position: absolute; }
+    .footer__social-link-2::before {
+      content: "Twitter";
+      visibility: hidden;
+      position: absolute; }
+    .footer__social-link-3::before {
+      content: "Facebook";
+      visibility: hidden;
+      position: absolute; }
   @media only screen and (max-width: 62.5em) {
     .footer__social {
       grid-column: 4/-1;
