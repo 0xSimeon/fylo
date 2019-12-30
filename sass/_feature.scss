@@ -8,7 +8,15 @@
     
     display: grid; 
     grid-template-columns: repeat(2, minmax(30rem, 1fr) );     
-    grid-template-rows: repeat(2, 1fr);       
+    grid-template-rows: repeat(2, 1fr);  
+    
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: .5rem; 
+    } 
 
     &__box {
         display: grid;
@@ -29,7 +37,12 @@
         top: -43%; 
         left: 0;
         background-repeat: no-repeat;
-        z-index: -2;    
+        z-index: -2; 
+        
+        @media only screen and (max-width: $bp-medium) {
+            top: -25%; 
+            background-image: url(../images/bg-curvy-mobile.svg);  
+        }
 
         
     }

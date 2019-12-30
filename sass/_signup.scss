@@ -16,13 +16,36 @@
         border: none;    
         width: 85%;
         font-size: 1.5rem; 
-        font-family: inherit;   
+        font-family: inherit;
+
+        &:focus {
+			outline: none;
+			box-shadow: 0 1rem 3rem rgba(0,0,0, 0.1);
+			border-bottom: 5px solid green;
+		}
+
+		&:focus:invalid {
+			border-bottom: 5px solid red;  
+		}
+        
+        
+        @media only screen and (max-width: 62.5em) {
+            width: 100%; 
+            margin-left: -2rem;  
+            
+        }
     }
 
     & form {
         display: grid;
         grid-template-columns: 1fr 25rem;   
-        align-items: center;       
+        align-items: center;  
+        
+        @media only screen and (max-width: 62.5em) {
+            display: flex; 
+            flex-direction: column; 
+        
+        }
     }
 
     &__btn {    
@@ -31,10 +54,29 @@
         border: none;
         cursor: pointer; 
         background-color: $call-to-action-1;     
-        display: inline-block;   
+        display: inline-block; 
+        color: $color-white; 
+        font-family: $font-open; 
+        font-size: 1.6rem;
+        
+        &:hover {
+            background-color: $call-to-action-2;   
+
+        }
+        
+        @media only screen and (max-width: 62.5em) {
+            width: 60%;
+            margin: 2rem auto;  
+        
+        }
     }
 
     & label {
-        visibility: hidden;          
+        visibility: hidden; 
+
+        @media only screen and (max-width: 62.5em) {
+            width: 100%; 
+        }
+                
     }
 }

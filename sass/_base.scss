@@ -2,6 +2,8 @@
 
 
 $bp-large: 62.5em;  // 1000px  ==> (1000px / 16px) 
+$bp-medium: 43.75em; //700px ==> (700px / 16px) 
+$bp-small: 31.25em; //500px ==> (500px / 16px) 
 
 
 *, 
@@ -13,15 +15,25 @@ $bp-large: 62.5em;  // 1000px  ==> (1000px / 16px)
 
 html {
     font-size: 62.5%; //1rem == 10px;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 50%; 
+    }
 }
 
 body {
     font-size: $font-primary;
     background-color: $color-signup;   
-    font-size: $font-primary; 
+    font-family: $font-open; 
     line-height: 1.5;  
 
 
+}
+
+br {
+    @media only screen and (max-width: $bp-large) {
+        display: none; 
+    }
 }
 
 
@@ -30,10 +42,7 @@ body {
 
 // .container {
 //     display: grid;
-//     grid-template-rows: 20vh repeat(7, min-content);       
-//     grid-template-columns: [full-start]8rem [center-start] 
-//     repeat(8, [column-start] minmax(min-content, 14rem) [column-end])
-//     [center-end] minmax(6rem, 1fr) [full-end];  
+//     grid-template-rows: 80vh repeat(min-content ;  
 //     overflow-x: hidden;              
 // } 
 

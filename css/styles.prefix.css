@@ -459,15 +459,15 @@ body {
     position: relative; }
     .footer__social-link-1::before {
       content: "Facebook";
-      visibility: hidden;
+      opacity: 0;
       position: absolute; }
     .footer__social-link-2::before {
       content: "Twitter";
-      visibility: hidden;
+      opacity: 0;
       position: absolute; }
     .footer__social-link-3::before {
       content: "Facebook";
-      visibility: hidden;
+      opacity: 0;
       position: absolute; }
   @media only screen and (max-width: 62.5em) {
     .footer__social {
