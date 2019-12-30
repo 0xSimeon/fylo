@@ -3,18 +3,18 @@
 
 # <center>Fylo Landing Page Challenge Completed ✔</center>
 
-###Desktop view 👇: 
+###  Desktop view 👇: 
 
 
 ![Desktop view](images/fylo&#32;desktop&#32;preview.png )
 
-##About Frontend Mentor
+##  About Frontend Mentor
 [ Frontend Mentor](https://www.frontendmentor.io) is a platform that allows upcoming developers to improve their skills in a real-life workflow. 
 
-## About The Challenge
+##  About The Challenge
 The challenge was about creating a landing page for a fictional brand called **Fylo** that is responsive across various devices.  
 
-##About Me
+##  About Me
 Hey 🖐, I am Simeon Udoh 🙋‍♂️, A beginner frontend developer. Yes, I don't bite... So go follow me on 👇: 
 +  [Twitter](https://twitter.com/Techviberng)
 +   [Facebook](https://facebook.com/Simeon.udoh.71)
@@ -41,7 +41,7 @@ The challenge was to build out this introductory component and get it looking as
 * BEM
 * ICOMOON SVG ICONS
 
-**Link to LIVE page 👉:** https://simeon4real.github.io/Frontendmentor-challenge/ 
+**Link to LIVE page 👉:** https://simeon4real.github.io/fylo/
 
 
 
