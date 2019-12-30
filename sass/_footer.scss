@@ -71,7 +71,7 @@
             grid-row: 2/3;
             grid-column: 1/2;
             align-self: end; 
-            
+
         }
     }
 
@@ -97,6 +97,8 @@
         font-family: $font-open; 
         font-weight: 400;   
     }
+
+
 
     &__contact {
         position: relative; 
@@ -155,7 +157,26 @@
     }
 
     &__social-link {   
-        text-decoration: none; 
+        text-decoration: none;
+        position: relative;   
+
+        &-1::before {
+            content: "Facebook"; 
+            visibility: hidden;
+            position: absolute;  
+        }
+
+        &-2::before {
+            content: "Twitter"; 
+            visibility: hidden; 
+            position: absolute; 
+        }
+
+        &-3::before {
+            content: "Facebook"; 
+            visibility: hidden;
+            position: absolute;  
+        }
 
     }
 
