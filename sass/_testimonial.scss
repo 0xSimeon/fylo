@@ -1,21 +1,12 @@
 .testimonial {
+	// grid-row: 5 / 6;
+	// grid-column: center-start / center-end;
 
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
 	padding: 4rem;
-	grid-column-gap: 2rem;
+	grid-column-gap: 4rem;
 	justify-content: center;
-	grid-row-gap: 4rem; 
-
-
-	@media only screen and (max-width: $bp-large) {
-		grid-template-rows: repeat(2, minmax(min-content,1fr));
-		grid-template-columns: repeat(8, 1fr);   
-	}
-	
-	@media only screen and (max-width: $bp-medium) {
-		grid-template-columns: repeat(auto-fit, minmax(25rem ,1fr)); 
-	}
 
 	&__box {
 		grid-column: 1 / 4;
@@ -29,17 +20,6 @@
 			grid-column: 2 / 5;
 			position: relative;
 			z-index: 3;
-
-			@media only screen and (max-width: $bp-large) {
-				grid-row: 1/2;
-    			grid-column: 1/5; 
-			}
-
-			@media only screen and (max-width: $bp-medium) {
-				grid-row: 1/2; 
-				grid-column: auto; 
-			}
-
 
 			&::before {
 				content: "";
@@ -56,32 +36,11 @@
 		}
 
 		&--2 {
-			grid-column: 5 / 8;  
-
-			@media only screen and (max-width: $bp-large) {
-				grid-row: 1/2;
-				grid-column: 5/-1;  
-			}
-
-			@media only screen and (max-width: $bp-medium) {
-				grid-row: 2/3;
-				grid-column: auto; 
-				  
-			}
+			grid-column: 5 / 8;
 		}
 
 		&--3 {
 			grid-column: 8 / 11;
-
-			@media only screen and (max-width: $bp-large) {
-				grid-row: 2/3;
-				grid-column: 3/7;
-			}	
-
-			@media only screen and (max-width: $bp-medium) {
-				grid-row: 3/4; 
-				grid-column: auto; 
-			}
 		}
 	}
 

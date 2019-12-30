@@ -1,105 +1,87 @@
 %heading {
-	color: $color-white;
-	font-family: $font-open;
-	text-align: center;
-	font-weight: 700;
+    color: $color-white;
+    font-family: $font-open; 
+    text-align: center; 
+    font-weight: 700; 
 }
 %paragraph {
-	text-align: center;
-	font-family: $font-open;
-	color: rgba($color-white, 0.8);
-	margin: 2rem auto;
-	font-weight: 400;
+    text-align: center; 
+    font-family: $font-open;   
+    color: rgba($color-white, .8);      
+    margin: 2rem auto; 
+    font-weight: 400;  
 }
-
+ 
 .heading {
-	// todo: group all heading extend;
 
-	&__primary {
-		@extend %heading;
-		font-size: 4rem;
+    // todo: group all heading extend; 
 
-		@media only screen and (max-width: $bp-medium) {
-			font-size: 3rem;
-		}
 
-		&--left {
-			text-align: left;
+    &__primary {
+        @extend %heading; 
+        font-size: 4rem;
+        
+        &--left {
+            text-align: left; 
+        }
 
-			@media only screen and (max-width: $bp-large) {
-				text-align: center;
-				letter-spacing: 1rem;
-			}
-		}
-	}
+    }
 
-	&__secondary {
-		font-size: 3.5rem;
-		@extend %heading;
-	}
+    &__secondary {
+        font-size: 3.5rem;     
+        @extend %heading; 
+    }
 
-	&__tertiary {
-		@extend %heading;
-		font-size: 2rem;
-	}
+    &__tertiary {
+        @extend %heading;  
+        font-size: 2rem; 
+    }
+
+
 }
+
 
 .paragraph {
-	&__intro {
-		@extend %paragraph;
-		font-size: 2rem;
 
-		@media only screen and (max-width: $bp-medium) {
-			font-size: 1.7rem;
-		}
-	}
+    &__intro { 
+        @extend %paragraph; 
+        font-size: 2rem;    
 
-	&__feature {
-		@extend %paragraph;
-		font-size: 1.5rem;
-	}
 
-	&__details {
-		@extend %paragraph;
-		text-align: left;
-		font-size: 1.7rem;
+    }
 
-		@media only screen and (max-width: $bp-large) {
-			text-align: center;
-		}
-	}
+    &__feature {
+        @extend %paragraph; 
+        font-size: 1.5rem;     
+    }
 
-	&__sign-up {
-		@extend %paragraph;
-		font-size: 1.7rem;
-		text-align: center;
-		width: 80%;
-		font-family: inherit;
-	}
-}
+    &__details {
+        @extend %paragraph; 
+        text-align: left;
+        font-size: 1.7rem; 
+    }
+
+    &__sign-up { 
+        @extend %paragraph;  
+        font-size: 1.7rem;      
+        text-align: center; 
+        width: 80%;    
+
+
+    }
+     
+    }
 
 .btn {
-	padding: 1.5rem 8rem;
-	font-size: 2rem;
-	border: none;
-	border-radius: 10rem;
-	width: -moz-fit-content;
-	width: fit-content;
-	margin: 1rem auto;
-	background-image: linear-gradient(
-		to right bottom,
-		$call-to-action-1,
-		$call-to-action-2
-	);
-	color: $color-white;
-	display: inline-block;  
-	cursor: pointer;
+    padding: 1.5rem 8rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10rem; 
+    width: -moz-fit-content;    
+    width: fit-content; 
+    margin: 1rem auto; 
+    background-image: linear-gradient(to right bottom, $call-to-action-1, $call-to-action-2);    
+    color: $color-white;  
 
-	&:hover {
-		background-image: linear-gradient(
-			to right bottom,
-			$call-to-action-2,
-			$color-signup   
-		);
-	}
+    
 }
